@@ -61,7 +61,7 @@ algoritmo Ejercicio
 							Fin Si
 							csuma=csuma-ingreso_por_teclado
 						FinPara
-						Escribir "el menor es" mayorn
+						Escribir "el menor es " mayorn
 						Escribir "la resta de los enteros es" csuma
 						
 						
