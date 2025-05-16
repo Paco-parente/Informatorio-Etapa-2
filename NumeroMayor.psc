@@ -1,6 +1,6 @@
 
-//Se desea realizar un programa que que permita el ingreso de 4 numeros y de ellos sacar el mayor, y la suma de todos.
-//Tambien tiene que tener la caracteristica de pudeer repetir la operacion x veces
+//Se desea realizar un programa que que permita el ingreso de 4 numeros y de ellos sacar el mayor, 
+
 
 
 Algoritmo sin_titulo
