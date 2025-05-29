@@ -17,3 +17,21 @@ print(f"Conjunto diccionario: {estudiante["edad"]}")
 estudiante["carrera"] = "ing"
 
 print(f"estudiante: {estudiante}")
+
+del estudiante["carrera"]
+print(f"estudiante: {estudiante}")
+
+print(f"Claves (keys) del diccionario: {list(estudiante.keys())}")
+print(f"Valores (values) del diccionario: {list(estudiante.values())}")
+
+estudiante_dos = {
+    "nombre": "Juan",
+    "edad": 23,
+    "curso": {
+        "nombre": "programacion web",
+        "tags": ["PW", "Programacion", "Web", "Python", "Django"] 
+    }
+}
+
+print(f"Estudiante_dos: {estudiante_dos['curso']["nombre"]}")
+print(f"Estudiante_dos: {estudiante_dos['curso']["nombre"]}")

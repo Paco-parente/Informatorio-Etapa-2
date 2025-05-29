@@ -22,7 +22,7 @@ def promedio(notas):
     return sum(notas) / len(notas)
 
 promedio_pablo = promedio([5, 6, 8, 9])
-promedio_juan = promedio([10, 6, 3, 2])
+promedio_juan = promedio([10, 6, 3, 8])
 
 print(f"promedio_pablo fue :{promedio_pablo}")
 print(f"promedio_juan fue :{promedio_juan}")
