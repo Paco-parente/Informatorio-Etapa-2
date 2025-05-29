@@ -4,11 +4,11 @@
 
 encuesta = {}
 
-for i in range(3)
-nombre = imput("Nombre: ")
+for i in range(3):
+    nombre = input("Nombre: ")
 
-respuesta = input("Te gusto el producto?")
+    respuesta = input("Te gusto el producto?")
 
-encuesta[nombre] = [respuesta]
+    encuesta[nombre] = [respuesta]
 
 print(encuesta)
