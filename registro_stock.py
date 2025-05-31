@@ -10,9 +10,12 @@ stock = {
     "leche":(200, 10),
 }
 
-producto = input("Ingrese el producto que desea")
+producto = input("Ingrese el producto que desea: ")
 
 if producto in stock:
     precio, cantidad = stock[producto]
 
     print(f"el precio es {precio}, y la cantidad disponible es {cantidad}")
+
+else:
+ print("el producto no se encuentra disponible")
