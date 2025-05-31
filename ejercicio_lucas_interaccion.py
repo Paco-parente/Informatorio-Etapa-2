@@ -9,30 +9,49 @@ debera permitir el ingreso de valores por teclado
 
 """
 
+while True:
+    
+    while True:
+        print("\nINGRESE QUÉ OPCIÓN DESEA REALIZAR")
+        print("1) Sumar 2 números")
+        print("2) Elevar un número al cuadrado")
+        print("3) Verificar si un número es par o impar")
 
-print("INGRESE QUE OPCION DESEA REALIZAR")
-print("Para sumar 2 numeros ingrese 1")
-print("Para elevar al Cuadrado un numero ingrese 2")
-print("Para verificar si un numero es par o impar ingrese 3")
-opcion = int(input("Ingrese su Opcion 1, 2 o 3: "))
-if opcion == 1:
-     num1 = int(input("ingrse el primer numero a sumar: "))
-     num2 = int(input("ingrse el segundo numero a sumar: "))
+        try:
+            opcion = int(input("Ingrese su opción (1, 2 o 3): "))
+            if opcion in [1, 2, 3]:
+                break  
+            else:
+                print("Opción no válida. Por favor, ingrese 1, 2 o 3.")
+        except ValueError:
+            print("Tenes que ingresa un número. Intenta de nuevo.")
 
-     resultado = num1 + num2
-     print(f"el resultado de tu suma es: {resultado}")
+    
+    if opcion == 1:
+        num1 = int(input("Ingrese el primer número a sumar: "))
+        num2 = int(input("Ingrese el segundo número a sumar: "))
+        resultado = num1 + num2
+        print(f"El resultado de la suma es: {resultado}")
 
-elif opcion == 2:
-     num1 = int(input("ingrese el numero que desea elevar al cuadrado: "))
-     cuadrado = num1 ** num1
-     print(f"el resultado del cuadrado de {num1} es: {cuadrado}")
+    elif opcion == 2:
+        num1 = int(input("Ingrese el número que desea elevar al cuadrado: "))
+        cuadrado = num1 ** 2
+        print(f"El cuadrado de {num1} es: {cuadrado}")
 
-elif opcion == 3:
-     num1 = int(input("ingrese el numero que desea verificar: "))
-     if num1 % 2 == 0:
-        print(f"el numero {num1} es par.")
-     else:
-        print(f"el numero {num1} es impar")
+    elif opcion == 3:
+        num1 = int(input("Ingrese el número que desea verificar: "))
+        if num1 % 2 == 0:
+            print(f"El número {num1} es par.")
+        else:
+            print(f"El número {num1} es impar.")
 
-else:
-     print("opcion no valida. ingrese 1, 2, o 3.")
+    
+    while True:
+        repetir = input("¿Querés realizar otra operación? (s/n): ").strip().lower()
+        if repetir == 's':
+            break  
+        elif repetir == 'n':
+            print("Bueno, nos vemos.")
+            exit()
+        else:
+            print("Entrada no válida. Ingresá 's' para sí o 'n' para no.")
