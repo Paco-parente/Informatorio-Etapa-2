@@ -1,10 +1,10 @@
 
 
 
-# def multiplicar(a,b):
-#     return a * b
+def multiplicar(a,b):
+     return a * b
 
-# print(multiplicar(20,30))
+print(multiplicar(20,30))
 
 
 def presentacion_persona(nombre, edad, pais):
